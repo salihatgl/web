@@ -1,5 +1,49 @@
-
-form{
-    width: 500px;
-    background-color: white;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+}
+footer a{
+    text-decoration: none;
+}
+footer .col{
+    float: left;
+   
+}
+footer .col0{
+    margin-left: 400px;
+  
+}
+footer .col1{
+    list-style: none;
+  
+}
+footer .col2{
+    list-style: none;
+}
+footer .col ul {
+    margin-right: 250px;
+  
+}
+footer .col0 ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer .col1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer .col2 ul li a{
+    text-decoration: none;
+    color: white;
 }
