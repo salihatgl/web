@@ -1,112 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>CSS Tutorial</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&effect=fire" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/img/icon.svg">
         <link rel="stylesheet" href="style.css">
+        
+       
+      
     </head>
-    <body>
-        
-        <form>
-            <table>               <!--    html de form ögelerinin ddenemelerini yaptım aşşağı kısımdada responsive olmayan basit footer için uğraştım -->
-            <label></label>İsminizi Giriniz:<br>
-            <input type="text"><br>
-
-            <label></label>Soyadınızı Giriniz:<br>
-            <input type="text"><br>
-
-            <label></label> Dil seçiniz:<br>
-
-            <input type="radio" >
-            <label for="radio">Türkçe</label><br>
-
-            <input type="radio">
-            <label >English</label><br>
-
-            <label>Hobileriniz Nelerdir:</label> <br>
-
-            <input type="checkbox" >
-            <label for=> Bisiklet sürmek</label><br>
-
-            <input type="checkbox">
-            <label> Araba Sürmek</label><br>
-
-            <input type="checkbox">
-            <label> Kitap Okumak</label><br><br>
-
-            <label for="pwd">şifre giriniz:</label><br>
-            <input type="password" id="pwd" name="pwd"><br>
-
-            <label for="fname">İSİM:</label><br>
-            <input type="text" id="fname" name="fname" value="first"><br>
-            <input type="reset" value="Sıfırla"><br><br>
-
-            <label for="alert">Onclick:</label>
-            <input type="button" onclick="alert('Hello World!')" value="ALERT"><br> <br>
-            
-            <label for="favcolor">Favori renginizi seçiniz:</label>
-            <input type="color" id="favcolor" name="favcolor"> <br> <br>
-
-            <label for="birthday">Doğumgününüzü seçiniz:</label>
-            <input type="date" id="birthday" name="birthday"><br> <br>
-
-            <label for="email">E-mail adresinizi giriniz:</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="gönder"><br> <br>
-
-            <label for="myfile">lütfen dosya seçiniz:</label>
-           <input type="file" id="myfile" name="myfile"><br><br>
-
-
-           <label for="miktar">Miktar giriniz:</label>
-          <input type="number" id="miktar" name="miktar" min="0" max="100" step="5" value="0">
-
-        </form>
-
-        <footer>
-            <div class="col">
-                <div class="col0">
-                    <ul style="list-style: none;">
-                        <h4 style="color: blue;">Kurumsal</h4>
-                        <li><a href="#">Hakkımızda</a></li>
-                        <li><a href="#">Hizmetlerimiz</a></li>
-                        <li><a href="#">Gizlilik Politikası</a></li>
-                        <li><a href="#">Ödüller</a></li>
-                    </ul>
-            </div>
-            
-        </div>
-        <div class="col">
-            <div class="col1">
-            <ul style="list-style: none;">
-                <h4 style="color:blue;">Yardım Al</h4>
-                <li><a href="#">SSS</a></li>
-                <li><a href="#">Teslimat</a></li>
-                <li><a href="#">İade</a></li>
-                <li><a href="#">Sipariiş Durumu</a></li>
-            </ul>
-        </div>
-        </div>
-            
-            </div>
-            <div class="col">
-                <div class="col2">
-                    <h4 style="color:blue;">E ticaret</h4>
-                    <ul style="list-style: none;">
-                        <li><a href="#">Saat</a></li>
-                        <li><a href="#">Çanta</a></li>
-                        <li><a href="#">Ayakkabı</a></li>
-                        <li><a href="#">Elbise</a></li>
-                    </ul>
-            </div>
     
-        </div>
-        </footer>
-        
-            
-   
+    <body>
+        <div class="baglanti">
+            <a href="https://www.w3schools.com/css/css_link.asp" target="_blank">Bağlantı Metni</a>
+            <a class="buton" href="https://www.w3schools.com/css/css_link.asp" target="_blank">Bağlantı Butonu</a>
 
+        </div>
+        <hr style="height: 3px; background-color: aliceblue;">
+        <div class="text">
+            <p><i>Lorem ipsum dolor sit amet consectetur</i> adipisicing elit. Dicta repudiandae totam consectetur eligendi 
+            <b>voluptatum. Quaerat dolores illo dicta, molestiae labore vitae blanditiis totam </b>voluptates mollitia? 
+            Esse aperiam ullam fugiat officia! <img src="img/icon.svg" alt="icon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam 
+            accusantium voluptatum consequatur quisquam nisi esse corrupti quasi eveniet? Veniam praesentium quidem 
+            <i class="transform">totam expedita modi culpa distinctio nisi odit, laboriosam aperiam.</i></p>
+        </div>
+        <hr style="height: 3px; background-color: aliceblue;">
+
+        <div class="font">
+            <p class="font-effect-fire">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae totam consectetur eligendi 
+            voluptatum. Quaerat dolores illo dicta, molestiae labore vitae blanditiis totam voluptates mollitia? 
+            Esse aperiam ullam fugiat officia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam 
+            accusantium voluptatum consequatur quisquam nisi esse corrupti quasi eveniet? Veniam praesentium quidem 
+            totam expedita modi culpa distinctio nisi odit, laboriosam aperiam. <i class="material-icons">computer</i></p>
+        </div>
+        <hr style="height: 3px; background-color: aliceblue;">
+
+        <div class="özellik">
+        <h1 id="lorem">Lorem, ipsum dolor.</h1>
+        <hr style="height: 3px; background-color: aliceblue;">
+        <h4 class="sınıf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit 
+            consequatur provident ad beatae vitae est fuga vel corrupti? Quisquam.</h4>
+            <hr style="height: 3px; background-color: aliceblue;">
+            <p class="sınıf large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quaerat unde
+             provident libero ipsum consequuntur fugit neque ullam, a assumenda fuga eius adipisci, praesentium labore.</p>
+             <hr style="height: 3px; background-color: aliceblue;">
+             <h1 class="color">HELLO!</h1>
+             <hr style="height: 3px; background-color: aliceblue;">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, enim.</p> 
+             
+        </div>
+        
     </body>
 </html>
