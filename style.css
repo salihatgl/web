@@ -1,145 +1,149 @@
-*{
-    margin: 50px;
+::marker{
+    color: cadetblue;
 }
-body{
-    background-image: url("img/Egea-Cross-3.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-attachment: fixed;
-    background-size: cover;
-
-    
-}
-.özellik p{
-    text-align: center;
-    background-color: #B7D7D8;
-    border-color: #204E5F;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 5px;
-    width: 500px;
-    height: 50%;
-    margin: auto;
-    padding: 3%;
-    box-sizing: border-box;
-}
-.özellik #lorem{
-    color: brown;
-    text-align: right;
-    background-color: rgba(241, 233, 254, 0.6);
-    border-style: dotted;
-    border-width: 10px;
-    border-color: yellow;
-    margin: 50px 100px 55px 90px;
-}
-.özellik .sınıf{
-    background-color: rgb(7, 0, 13);
-    opacity: 0.6;
-    text-align: center;
-    color: white;
-    border-style: double;
-    border-width: 10px 20px;
-    margin-left: 50px;
-    max-width: 2000px;
-   
-}
-.özellik .large{
-    margin-left: inherit;
-    border-style: double;
-    width: auto;
-    height: auto;
-    
-}
-
-.özellik .color{
-    background-color:#B7D7D8;
-    border-left: 6px solid #204E5F;
-    padding: 25px;
-    outline: 10px solid #79A7A8;
-    /* outline-offset: 10px; */
-   
-}
-.text p{
-    border: 1px solid black;
-    text-indent: 50px;
-    letter-spacing: 3px;
-    background-color: white;
-    line-height: 2;
-    text-align-last: center;
-    padding: 5px;
-}
-.text p i{
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    text-shadow: 2px 2px 5px rgb(86, 4, 226);
-
-}
-.text p b{
-    text-decoration: underline double 2px red;
-    text-align: center;
-}
-.text p img{
-    vertical-align: top;
-}
-.text p .transform{
-  text-transform: uppercase;
-  text-shadow: none;
-  direction: rtl;
-  unicode-bidi: bidi-override;   
-}
-.font p{
+::selection{
     background-color: aliceblue;
-    font-family: "Sofia", sans-serif;
-    margin: 10px;
-    padding: 5px;
-    font-size: 1vw;
-    margin: 20px;
 }
-.font p i{
-    vertical-align: bottom;
-}
-.baglanti{
-    text-align: center;
-    padding: 50px;
+.list .a{
+    list-style-type:square;
+    border: 1px solid black;
     margin: 50px;
+    background-color: white;
+    width: 500px;
 }
-.baglanti a{
-    font-size: 30px;
-    text-decoration: none;
-    
+.list .a li{
+   border: 1px solid black;
 }
-.baglanti a:visited{
-    color: white;
+.list .b{
+    list-style-type: none;
+    border-left: 5px solid rgb(42, 20, 186);
+    background-color: aliceblue;
+    margin: 50px;
+    width: 500px;
 }
-.baglanti a:active{
+.list .c{
+    list-style-image: url(img/icon.svg);
+    margin: 50px;
+    width: 500px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.list .c li{
+    border: 1px solid black;
+    list-style-position: inside;
+ }
+
+ table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+.tablo :first-child{
+    text-align: center;
+}
+ table tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+ }
+ table th{
+    background-color:green ;
+ }
+ table tr:nth-child(even){
+    background-color:rgba(169, 169, 169, 0.79);
+
+ }
+ .box{
+    border: 1px solid black;
+    padding: 30px;
+    background-color: aliceblue;
+    margin-bottom: 30px;
+    width: 500px;
+
+}
+
+.box-1{
+    position: static;
+}
+.box-2{
+    position: relative;
+    left: 100px;
+}
+
+.box-3{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    width: 300px;
+    background-color:cadetblue;
+}
+.box-4{
+    position:absolute;
+    width: 80px;
+    top: 80px;
+    right: 100px;
+}
+.box-5{
+    position:sticky;
+    bottom: 0px;
+    height: 20px;
+    background-color: rosybrown;
+}
+.overflow{
+    width: 500px;
+    height: 300px;
+    background-color:gainsboro;
+    /* overflow: hidden;*/
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    overflow-x: visible;
+    overflow-y: auto;
+    margin-bottom: 30px;
+} 
+.overflow p::first-line{
     color: red;
 }
-.baglanti a:hover{
-    cursor: pointer;
-    background-color: rgba(193, 209, 228, 0.986);
-    border-radius: 7px;
+.overflow p::first-letter{
+    font-size: 50px;
+}
+.box-3 + hr{
+    color: black;
+    height: 5px;
+}
+.overflow >p{
+    color: midnightblue;
+}
+.float{
+    padding: 10px;
+   border: 1px solid black;
+   width: 500px;
+}
+.float img{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    float: right
+    /* float:left; */
+    /* float: inherit; */
+
+}
+.clearfix{
+    border: 1px solid black;
+    width: 500px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.clearfix img{
+    width: 200px;
+    height: 150px;
+    float: right;
+    margin: 10px;
 }
 
-.baglanti .buton{
-    font-size: 30px;
-    text-decoration: none;
-    background-color: #ffffff04;
-    color: rgb(153, 151, 151);
-    padding: 5px;
-    border: 2px solid #204E5F;
-    margin:20px;
-    
-}
-.baglanti .buton:visited{
-    color: rgb(153, 151, 151);
-
-}
-.baglanti .buton:hover{
-    font-size: 30px;
-    text-decoration: none;
-    background-color: #79A7A8;
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    border: 2px solid #204E5F;
-}
-
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
