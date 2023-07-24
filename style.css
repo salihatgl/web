@@ -1,256 +1,129 @@
-.transform{
-   width: 200px;
-   height: 200px;
-   border: 1px solid black;
-   background-color: cornflowerblue;
-   transition: width 2s, height 2s, transform 4s ;
-   transition-timing-function: linear;
-   transition-delay: 0.5s;
-   
+*{
+   margin: 0;
+   font-family:'Franklin Gothic small', 'Arial Narrow', Arial, sans-serif
 }
-.transform:hover{
-    width:300px;
-    height: 300px;
-    transform: rotate(180deg);
-}
-
-.transform p{
-  text-align: center;
-  
-}
-@keyframes animasyon{
-0%{background-color: blue; left: 0px; top:0px;}
-25%{background-color: purple; left: 250px; top:0px;}
-50%{background-color: palevioletred; left: 250px; top:300px;}
-75%{background-color: red; left: 0px;top: 300px;}
-100%{background-color: blue; left: 0px;top: 0px;}
-
-}
-.animasyon{
-   width: 100px;
-   height: 100px;
-   position: relative;
-   animation-name: animasyon;
-   background-color: blue;
-   animation-duration: 5s;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   animation-timing-function:ease;
-}
-.tooltip{
-   margin-top: 320px;
-   display: inline-block;
-   position: relative;
-
-}
-.tooltiptext{
- margin-left:5px ;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  border-radius: 3px;
-  visibility: hidden;
-  color: white;
-  position: absolute;
-  left: 50%;
-  bottom: 120%;
-  margin-left: -50px;
-  z-index: 1;
-}
-
-.tooltiptext::after{
-   content: " ";
-   position: absolute;
-   top: 100%;
-   left: 50%;
-   margin-left: -5px;
-   border-width: 5px;
-   border-style: solid;
-   border-color:rgba(0, 0, 0, 0.7) transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext{
-   visibility: visible;
-}
-.resim img{
-   border-radius: 50%;
-   border: 1px solid aliceblue;
-   margin-top: 50px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   filter: contrast(150%);
-}
-.container{
-  position: relative;
-  width: 30%;
-  display: block;
-}
-.text1{
-   width: 100%;
-   background-color: rgb(24, 163, 205);
-   border: 1px solid black;
-   display: block;
-   text-align: center;
-   height: 300px;
-}
-.resim2{
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   left: 0;
-   display: block;
-   width: 100%;
-   height: 0px;
+nav .menu{
+   list-style-type: none;
+   background-color:black;
    overflow: hidden;
-   transition: height 2s ease ;
-}
-.container:hover .resim2{
-   height: 300px;
-}
-.container:hover .text{
-   transform: translate(0px, -80px);
-}
-.text{
-   color: white;
-   font-size: 25px;
-   position: absolute;
-   top: 50%;
-   left: 40%;
-   transition: transform 2s; 
-}
-.object img{
-   margin: 25px;
-  
-}
-.fill{
-   width: 300px;
-   height: 400px;
-   object-fit: fill;
-}
-.contain{
-   width: 300px;
-   height: 400px;
-   object-fit: contain;
-
-}
-.cover{
-   width: 300px;
-   height: 400px;
-   object-fit: cover;
-   object-position: 50% 80%;
-
-}
-.scale{
-   width: 300px;
-   height: 400px;
-   object-fit: scale-down;
-}
-.btn{
-   margin-left: 20px;
-   padding: 32px 38px;
-   background-color: darkorange;
-   color: white;
-   border: 2px solid white;
+   padding: 0px;
+   margin: 0px;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   left: 0px;
+} 
+li{
+   float: left;
+   padding-left: 12px;
+   
+   
+}li a{
+   text-decoration: none;
+   color:white;
+   display: block;
+   padding: 12px;
    font-size: 15px;
-   border-radius: 10px;
-   width: 25%;
-   display: block;
-}
-.btn:hover{
-   border: 2px solid darkorange;
-   background-color: white;
-   color: darkorange;
-   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.btn1{
-   margin: 20px;
-   padding: 32px 38px;
-   background-color: green;
-   color: white;
-   text-align: center;
-   font-size:28px;
-   border: none;
-   cursor: pointer;
-   position: relative;
-   box-shadow: 0 9px #999;
-   border-radius: 15px;
-   display: block;
-
-}
-.btn1:hover{
-   background-color: rgb(2, 68, 2);
  
 }
-.btn1:active {
-   background-color: #3e8e41;
-   box-shadow: 0 5px #666;
-   transform: translateY(4px);
- }
- .gezinme a{
-   text-decoration: none;
-   font-size: 20px;
-   padding: 10px 15px;
-   transition: background-color .3s;
-   
+li a:hover{
+   background-color: white;
+   color: black;
+}
+header img{
+   width: 100%;
+   height: 550px;
+   object-fit: fill;
+}
+.cointer h1{
+   text-align: center;
+   margin-top: 85px;
+   font-weight:lighter;
+}
+.cointer p{
+   text-align: center;
+   margin-top: 20px;
+   font-size: 18px;
+   margin-bottom: 50px;
+}
+
+.cointer .profile div{
    float: left;
-   
+   text-align: center;
+   width: 25%;
+}
+.cointer .profile div img{
+   border-radius: 70%;
+   width: 50%;
+   padding: 10px;
+}
+.cointer::after{
+  content: " " ;
+  clear: both;
+  display: table;
+}
+
+div.gallery {
+   margin: 5px;
+   border: 1px solid #ccc;
+   float: right;
+   width: 270px;
+   margin-right: 20px;
+   margin-top: 50px;
  }
- .gezinme a.active {
-   background-color: #3e8e41;
+ 
+ div.gallery:hover {
+   border: 2px solid #777;
+ }
+ 
+ div .gallery img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ div.desc {
+   padding: 15px;
+   text-align: center;
    color: white;
  }
- .gezinme a:hover:not(.active){
-   background-color: rgba(0, 181, 0, 0.322);
- }
- .column{
-   --red:blue;
-   display: block;
-   margin: 50px;
-   column-count: 3;
-   column-gap: 40px;
-   column-rule: 3px solid var(--red);
-   column-width: 100%;
- }
- .column h2{
-   column-span: all;
- }
- .resize{
+ .card{
+   height: 600px;
+   background-color:rgb(48, 46, 46);
    
+ }
+ .yazi{
+   float: left;
+   margin:20px;
+   color: white;
+   padding-top: 50px;
+   font-size: large;
+ }
+.baslik{
+   text-align: center;
+   margin-top: 20px;
+}
+.baslik p{
+   margin-top: 20px;
+}
+.fiyat{
    border: 1px solid black;
-   width: 300px;
+   display: inline-block;
+   width: 450px;
+   font-size:25px;
+   text-align: center;
    margin: 20px;
-   padding: 15px;
-   /* resize: horizontal;  sadece genişliği değiştirir*/
-   /* resize:vertical;  sadece yüksekliğini değiştirir */
-   resize: both;
-   overflow: auto;
-   border: 2px solid --red;
-   box-sizing: border-box;
- }
 
- :root{
-   --red: rgb(116, 6, 6);
- }
- .flex a{
-   background-color: aqua;
-   margin: 10px;
-   border: 1px solid black;
-   width: 10px;
-   
- }
- .flex{
-   display: flex;
-   /* flex-direction: column; */
-   /* flex-direction: row; */
-   /* flex-direction: column-reverse; */
-   flex-direction: row-reverse;
- }
-
-
-
-
+}
+.fiyat p,h2{
+   padding: 20px;
+}
+.fiyat .temel{
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+.card1{
+   text-align: center;
+}
 
 
 
